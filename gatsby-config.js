@@ -5,6 +5,19 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-source-prismic-graphql',
+      options: {
+        repositoryName: 'aguriken-gatsby-test',
+        pages: [{
+          type: 'Page',
+          match: '/:uid',
+          path: '/',
+          component: require.resolve('./src/components/templates/page.js')
+        }]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
