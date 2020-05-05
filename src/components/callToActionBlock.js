@@ -32,7 +32,7 @@ const Button = styled.div`
 
   a{
     padding: 4px 8px;
-    color: white;
+    color: black;
     display: inline-block;
   }
 `;
