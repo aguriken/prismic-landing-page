@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import styled from 'styled-components';
 import RichText from '../components/richText';
+import Image from "../components/image";
 
 export const query = graphql`
 {
@@ -106,6 +107,9 @@ const ContactUs = (props) => {
             Submit
           </Button>
         </Form>
+        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+          <Image />
+        </div>
       </ContentWrapper>
     </Layout>
   )
