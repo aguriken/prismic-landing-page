@@ -52,7 +52,7 @@ const PageWrapper = styled.section`
 `;
 
 const Page = (props) => {
-  console.log(props);
+  // console.log(props);
   const pageTitle = props.data.prismic.allPages.edges[0].node.page_title;
   const content = props.data.prismic.allPages.edges[0].node.content;
   return (

@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
         <StaticQuery 
           query={`${navigationQuery}`} 
           render={(data) => {
-            console.log(data)
+            // console.log(data)
             return (
               <>
                 <Branding>
